@@ -55,8 +55,8 @@ def makePdf(pdfFileName, listPages, dir = ''):
     # make pdf_exports folder
     if (dir):
         dir += "/"
-        if not os.path.isdir(dir + "/pdf_exports"):
-            os.mkdir(dir + "/pdf_exports")
+    if not os.path.isdir(dir + "/pdf_exports"):
+        os.mkdir(dir + "/pdf_exports")
     # determine image size
     cover = Image.open(listPages[0])
     width, height = cover.size
