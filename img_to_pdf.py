@@ -27,6 +27,7 @@ def split_by_timestamp(dir):
 
     for time, arr in timestamps.items():
         split_by_type(dir, arr, time)
+        makePdf(time, arr, dir)
 
 
 def split_by_type(dir, files, time = ''):
